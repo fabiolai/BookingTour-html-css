@@ -11,24 +11,42 @@ body{
     font-family: 'Inter', sans-serif;
 }
 header{
-    background-image:url("./image/tea.jpg");
+    /* background-image:url("./image/tea.jpg");
     width:100%;
-    height: 100vh;
+    height: 100vh; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
     background-attachment: fixed;
 }
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 6vh;
+    z-index: -1;
+    
+  }
 nav{
     padding: 2rem;
     display: flex;
     justify-content: space-between;
-    background: rgba(34, 151, 155, 0.342);
+    background: rgba(182, 185, 178, 0.897);
     box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.492);
     position: sticky;
     top: 0px;
     width: 100%;
     z-index: 9999;
+}
+.welcome{
+    color:black;
+    font-size: 1.8rem;
+    /* width: 65%; */
+    padding: 1rem;
+    /* border-radius: 2.8rem; */
+    margin-bottom: 1rem;
+    text-align:right; 
 }
 .logo-img{
     width: 70PX;
@@ -81,24 +99,30 @@ nav{
     padding-top: 3rem;
 }
 .text{
-    width: 65%;
-    padding: 3rem;
-    margin-left: 2rem;
-    background: white;
+    width: 50%;
+    padding: 2rem;
+    /* margin-left: 1rem; */
+    /* background: rgb(179, 170, 170); */
     position: relative;
-    height: 20rem;
+    /* height: 20rem;
     border-radius: 0.8rem;
-    box-shadow: 0 1.2rem 3.2rem black;
+    box-shadow: 0 1.2rem 3.2rem black; */
+    /* height: 50%; */
+    background: rgba(255, 255, 255, 0.295);
+   
+   
+  
     
     
  }
 .homeparagraph{
-    color:black;
+    color:rgb(32, 31, 31);
     font-size: 1.8rem;
     /* width: 65%; */
-    padding: 2rem;
+    /* padding: 1rem; */
     /* border-radius: 2.8rem; */
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    text-align: right;
 
     
     
@@ -107,12 +131,12 @@ nav{
 }
 .home-btn{
     display: inline-block;
-    color:white;
+    color:rgb(112, 106, 106);
     font-size:2rem ;
     font-weight: 300;
     box-shadow: 0 1.2rem 3.2rem rgb(112, 107, 107);
     position: absolute;
-    left: 30%;
+    right: 30%;
     bottom: 0.8rem;
     transform: translate(50% , -50%);
     background:rgb(119, 119, 228);
@@ -120,17 +144,19 @@ nav{
     border-radius: 0.9rem;
     cursor: pointer;
     transition: all 0.3;
+    margin-left: 1.2rem;
     
 }
 .heading-title{
-    color: white;
+    color: rgb(15, 15, 15);
     font-size: 4.8rem;
     text-shadow: 0 1.8rem 2.3rem black;
     padding: 4rem 0 8rem;
 }
 .aboutcontainner,.tours-containner{
-    padding: 30rem 4rem;
-    margin: auto;
+    padding: 10rem 2rem;
+    /* margin: auto; */
+    background-color: rgb(0, 0, 8);
     
 }
 .title{
@@ -159,15 +185,17 @@ color: rgb(78, 73, 73);
 }
 .aboutparagraph{
     font-size: 1.8rem;
-    color: black;
+    color: rgb(255, 255, 255);
     line-height: 1.5;
     letter-spacing: 1px;
 }
 .parone{
-margin-bottom: 2.8rem;
-color: black;
+margin-top: 1.8rem;
+color: rgb(248, 244, 244);
 line-height: 2rem;
-letter-spacing: 1px;
+letter-spacing: 2px;
+font-size:1.5rem;
+
 
 }
 .tours-containner{
@@ -195,7 +223,7 @@ transform:scale(1.05);
 }
 .image-care{
     width: 400px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 90%, 0 47%, 0 100%, 0 62%);
+    clip-path: polygon(50% 0%, 59% 0, 100% 0, 100% 91%, 80% 88%, 100% 91%, 0 90%, 0 78%, 0 38%, 0 0);
      
 }
 .main-card{
@@ -251,4 +279,69 @@ margin: 0 3rem 3rem 3rem;
 }
 .place{
     margin:0rem 1rem;
+}
+/* bookingform */
+/* #colorbackgound{
+    background: black;
+} */
+.form{
+    background:black;
+}
+
+#formone{
+    /* padding: 15px 20px 15px 20px;   */
+    display: inline-block;
+    border: 1px solid rgb(24, 23, 23);  
+    /* border-radius: 15px; */
+    /* background-color: #e4d5d5; */
+    /* margin-left: 60rem;
+    margin-bottom: 20rem; */
+    background:white;
+    width:100%;
+    height: 90vh;
+    width: 50%;
+    padding: 1rem;
+    /* margin-left: 1rem; */
+    background: rgb(197, 194, 194);
+    position: relative;
+    height: 20rem;
+    /* border-radius: 0.8rem; */
+    box-shadow: 0 1.2rem 3.2rem black;
+    height: 50%;
+    
+    
+}
+
+input,select{
+    border: 3px solid rgb(14, 13, 13);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 8px 24px;
+    margin: 4px 0;    
+}
+/* fieldset {       
+    border-radius: 15px;  
+  }  
+legend{
+    font-weight: bold;
+} */
+label{
+    width:80px;
+    display: inline-block;
+    font-size:1.5rem;
+    border: 5px;
+}
+button{
+    background-color: #1723d1;
+    border-radius: 60%;
+    color: white;
+    font-size: 18px;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.radio{
+    border: 5px;
+    font-size: 1.5rem;
+    width: 80px;
 }
